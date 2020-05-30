@@ -13,23 +13,33 @@ body{
 	top: 0;
 	z-index: 100;
 	opacity: 1;
-	background-color: white;
+	padding: 0;
+	background-color: none;
 	width: 100%;
 	height: 100px;
 	overflow: ;
-	border-bottom: ridge 4px magenta;
 }
 
 .header {
 	width: 100%;
-	height: auto;
+	height: 50px;
 	align-items: center;
 	background-color: magenta; 
+}
+
+.header a{
+	text-decoration: unset;
+}
+
+.header a:hover{
+	color: blue;
+
 }
 
 h1 {
 	text-align: center;
 	color:  darkmagenta;
+	text-decoration: none;
 
 }
 
@@ -38,7 +48,15 @@ h1 {
 	color:  darkgray;
 }
 
-nav {
+.header h1:hover .vic{
+	color: blue;
+}
+
+.header h1:hover{
+	color: blue;
+}
+
+.topnav {
 	margin-bottom: 0;
 	display: block;
 	width: 100%;
@@ -46,7 +64,7 @@ nav {
 	background-color: #333;
 }
 
-nav a {
+.topnav a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
@@ -61,7 +79,7 @@ nav a {
 	color: darkgoldenrod;
 }
 
-nav .icon{
+.topnav .icon{
 	display: none;
 }
 
@@ -80,7 +98,7 @@ nav .icon{
 }
 
 .dropdown-content{
-	display: ;
+	display: none;
 	position: absolute;
 	background-color: azure;
 	min-width: 160px;
@@ -96,8 +114,50 @@ nav .icon{
 	display: block;
 }
 
-nav a:hover, .dropdown:hover .dropbtn{
+.topnav a:hover, .dropdown:hover .dropbtn{
 	background-color: #ddd;
-	color: turquoise; .dropbtn
+	color: turquoise;
+}
+
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+	color: turquoise;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+@media screen and (max-width: 800px){
+	.topnav a:not(:first-child), .dropdown .dropbtn {
+		display: none;
+	}
+	.topnav a.icon{
+		float:right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.topnav.responsive {position: flex;}
+	.topnav.responsive .icon{
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+	}
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content{position: relative;}
+	.topnav.responsive .dropdown .dropbtn{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+
 }
 
