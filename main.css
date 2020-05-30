@@ -98,6 +98,6 @@ nav .icon{
 
 nav a:hover, .dropdown:hover .dropbtn{
 	background-color: #ddd;
-	color: turquoise;
+	color: turquoise; .dropbtn
 }
 
