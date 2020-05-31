@@ -127,6 +127,7 @@ h1 {
 
 .dropdown:hover .dropdown-content{
 	display: block;
+	position: fixed;
 }
 
 @media screen and (max-width: 800px){
@@ -159,5 +160,32 @@ h1 {
 		text-align: left;
 	}
 
+}
+
+.display-bar-1{
+	text-align: center, justify;
+	text-justify: inter-word;
+	margin-top: 98px;
+	position: relative;
+	display: block;
+	background-color: darkmagenta;
+
+}
+
+.image-bar-1{
+	width: 65%;
+	height: 450px;
+}
+
+.statement{
+	width: 65%;
+	font-family: Arial, sans-serif;
+	color: aliceblue;
+}
+
+@media screen and (max-width: 800px){
+	.image-bar-1{
+	height: 250px;
+	}
 }
 
