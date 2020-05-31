@@ -171,7 +171,7 @@ h1 {
 	margin-top: 98px;
 	position: relative;
 	display: block;
-	background-color: darkmagenta;
+	background-color: magenta;
 
 }
 
@@ -224,4 +224,60 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 	color: darkmagenta;
 	text-align: center;
 	padding: 8px 0px;
+}
+
+.contact-us{
+	margin-top: 100px;
+	display: flex;
+	background-color: gray;
+	font-family: Impact, fantasy;
+}
+
+.contact{
+	text-align: left;
+	padding-top: 40px;
+	padding-left: 2px;
+}
+.contact h1{
+	font-family: fantasy;
+	font-size: 18px;
+	font-weight: bold;
+	color: darkmagenta;
+}
+
+.contact span{
+	font-weight: 20px;
+	font-size: 18px;
+}
+
+form{
+	border-collapse: 3px solid magenta;
+	font-family: Arial, sans-serif;
+}
+.news-letter{
+	padding: 20px;
+	background-color: gray;
+}
+
+input[type=text], input[type=submit] {
+	width: 50%;
+	padding: 12px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box; 
+}
+
+input[type=checkbox] {
+	margin-top: 16px;
+}
+
+input[type=submit]{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+}
+
+input[type=submit]:hover {
+	opacity: 0.8;
 }
