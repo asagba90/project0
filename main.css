@@ -28,32 +28,33 @@ body{
 }
 
 .header a{
-	text-decoration: unset;
+	text-decoration: none;
+
 }
 
 .header a:hover{
-	color: blue;
+	color: darkmagenta;
+	text-decoration: none;
 
 }
 
 h1 {
 	text-align: center;
 	color:  darkmagenta;
-	text-decoration: none;
-
 }
 
 .vic{
 	text-align: center;
 	color:  darkgray;
+	text-decoration: none;
 }
 
 .header h1:hover .vic{
-	color: blue;
+	color: lime;
 }
 
 .header h1:hover{
-	color: blue;
+	color: darkmagenta;
 }
 
 .topnav {
@@ -117,12 +118,14 @@ h1 {
 .topnav a:hover, .dropdown:hover .dropbtn{
 	background-color: #ddd;
 	color: turquoise;
+	text-decoration: none;
 }
 
 
 .dropdown-content a:hover{
 	background-color: #ddd;
 	color: turquoise;
+	text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content{
@@ -189,3 +192,36 @@ h1 {
 	}
 }
 
+.feature-head {
+	color: darkmagenta;
+}
+
+.tasks{
+	font-weight: 20px;
+	font-family: Times New Roman, serif;
+}
+
+table{
+	font-family: Times New Roman, serif;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%; 
+}
+
+th, td{
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: crimson;
+	color: darkmagenta;
+	text-align: center;
+	padding: 8px 0px;
+}
