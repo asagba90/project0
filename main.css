@@ -221,8 +221,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: crimson;
-	color: darkmagenta;
+	background-color: darkmagenta;
+	color: crimson;
 	text-align: center;
 	padding: 8px 0px;
 }
